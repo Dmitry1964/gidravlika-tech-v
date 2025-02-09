@@ -1,0 +1,28 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
+
+.intro {
+  height: 507px;
+  background-color: black;
+  background-image: url("../img/content/pattern.jpeg");
+  background-position-x: 150px;
+  border-top: 1px solid variables.$color-default-white-20;
+  padding-top: 180px;
+
+  & p {
+    font-family: variables.$ff-second;
+    font-size: 4rem;
+    line-height: auto;
+    color: variables.$color-malibu;
+    text-align: center;
+    margin: 0 0 50px;
+  }
+
+  & h2 {
+    font-size: 6.2rem;
+    line-height: 8rem;
+    color: variables.$color-default-white;
+    text-align: center;
+    margin: 0;
+  }
+}

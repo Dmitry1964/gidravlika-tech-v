@@ -1,0 +1,59 @@
+@use '/src/styles/mixins.scss';
+@use '/src/styles/variables.scss';
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header__banner {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.header__content {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  & h1 {
+    font-size: 6.2rem;
+    line-height: 100%;
+    color: variables.$color-default-white;
+    text-align: center;
+    margin: 0 0 40px;
+
+    @include mixins.vp-1279 {
+      font-size: 5.2rem;
+    }
+  }
+
+  & h2 {
+    font-size: 5rem;
+    line-height: 6.8rem;
+    color: variables.$color-eastern-blue;
+    text-align: center;
+    margin: 0 0 50px;
+
+    @include mixins.vp-1279 {
+      font-size: 4rem;
+    }
+  }
+
+  & p {
+    font-family: variables.$ff-second;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: variables.$color-default-white;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.header__banner_img {
+    object-fit: cover;
+    height: 804px;
+}
