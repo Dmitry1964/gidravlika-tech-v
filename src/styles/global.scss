@@ -1,0 +1,44 @@
+@import './fonts';
+@import './variables.scss';
+
+
+:root {
+    font-family: $ff-default;
+    font-size: 10px;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: $color-default-black;
+  }
+
+
+  button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+ *,
+ *::before,
+ *::after {
+  box-sizing: border-box;
+ }
