@@ -63,6 +63,13 @@
 .header_contacts__link {
   display: flex;
   align-items: center;
+  background-color: transparent;
+  transition: background-color 0.35s ease;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: variables.$color-curious-blue-80;
+  }
 
   & span {
     font-family: variables.$ff-second;
