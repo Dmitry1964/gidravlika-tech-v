@@ -1,0 +1,70 @@
+@use '/src/styles/container.scss';
+@use '/src/styles/variables.scss';
+
+.about {
+  padding-top: 115px;
+  padding-bottom: 100px;
+  background-color: variables.$color-midnight-express;
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 438px 1fr;
+  column-gap: 2%;
+}
+
+.about__content {
+  padding-left: 15%;
+
+  & span {
+    display: inline-block;
+    font-family: variables.$ff-second;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: variables.$color-malibu;
+    margin-bottom: 40px;
+  }
+
+  & h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+    color: variables.$color-default-white;
+    margin: 0 0 50px;
+  }
+
+  & p {
+    font-family: variables.$ff-second;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: variables.$color-default-white;
+    margin: 0;
+  }
+}
+
+.about__image {
+
+  & img {
+    filter:grayscale(80%) brightness(50%);
+  }
+}
+
+.about__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  display: flex;
+  font-family: variables.$ff-second;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: variables.$color-default-white;
+  margin-bottom: 50px;
+
+  & span {
+    margin-left: 25px;
+  }
+}

@@ -1,3 +1,4 @@
+import { About } from "src/widgets/about";
 import { Intro } from "src/widgets/intro";
 import { Services } from "src/widgets/services";
 
@@ -6,6 +7,7 @@ const MainPage = () => {
     <main>
       <Intro />
       <Services />
+      <About />
     </main>
   )
 }

@@ -17,7 +17,7 @@ const Services = () => {
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         }}
-        speed={2000}
+        speed={3000}
       >
         <SwiperSlide>
           <ServiceCard
@@ -43,10 +43,10 @@ const Services = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ServiceCard
-            img="img/content/remont.jpeg"
-            img2x="img/content/remont2x.jpeg"
-            webp="img/content/remont.webp"
-            webp2x="img/content/remont2x.webp"
+            img="img/content/remont-obor.jpeg"
+            img2x="img/content/remont-obor2x.jpeg"
+            webp="img/content/remont-obor.webp"
+            webp2x="img/content/remont-obor2x.webp"
             title="Ремонт спецтехники"
             desc='ремонт спецтехники - автокраны, АГП, манипуляторы'
             url="#"
@@ -80,3 +80,4 @@ const Services = () => {
 };
 
 export default Services;
+

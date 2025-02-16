@@ -1,4 +1,4 @@
-@import '/src/styles/variables.scss';
+@use '/src/styles/variables.scss';
 
 
 .service_card__wrapper {
@@ -29,32 +29,32 @@
 .service_card__title {
   font-size: 5rem;
   line-height: 10rem;
-  color: $color-default-white;
+  color: variables.$color-default-white;
   margin: 0 0 60px;
   text-align: center;
-  background-color: $color-curious-blue-80;
+  background-color: variables.$color-curious-blue-80;
   transition: background-color 0.35s ease;
 }
 
 .service_card__desc {
-  font-family: $ff-second;
+  font-family: variables.$ff-second;
   font-size: 2.4rem;
   line-height: 3rem;
   text-align: center;
-  color: $color-default-white;
+  color: variables.$color-default-white;
   margin: 0;
   flex-grow: 1;
-  color: $color-default-white
+  color: variables.$color-default-white
 }
 
 .service_card__button {
   font-size: 2rem;
   line-height: 3rem;
-  color: $color-midnight-express;
+  color: variables.$color-midnight-express;
   text-transform: uppercase;
   justify-self: flex-end;
   align-self: center;
-  background-color: $color-malibu;
+  background-color: variables.$color-malibu;
   width: 230px;
   height: 80px;
   border: none;
@@ -77,11 +77,11 @@
   }
 
   & .service_card__button {
-    background-color: $color-curious-blue-80;
+    background-color: variables.$color-curious-blue-80;
   }
 
   & .service_card__title {
-    background-color: $color-malibu;
+    background-color: variables.$color-malibu;
   }
 }
 
