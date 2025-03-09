@@ -1,0 +1,6 @@
+@use '/src/styles/variables.scss';
+
+.footer {
+  padding: 15px 0;
+  background-color: variables.$color-default-black;
+}
