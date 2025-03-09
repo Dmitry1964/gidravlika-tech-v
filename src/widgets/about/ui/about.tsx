@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div className={cls.about__image}>
             <picture>
-              <source type="image/webp" srcSet='img/content/about-first.webp, img/content/about-first@2z.webp 2x' />
+              <source type="image/webp" srcSet='img/content/about-first.webp, img/content/about-first@2x.webp 2x' />
               <img src="img/content/about-first.jpg" srcSet='img/content/about-first@2x.jpg 2x' width={438} height={657} alt="Изображение спецтехники на фоне города" />
             </picture>
           </div>

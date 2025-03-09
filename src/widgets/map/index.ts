@@ -1,3 +1,3 @@
-import Map from "./ui/map";
+import ContactMap from "./ui/map";
 
-export {Map};
+export {ContactMap};

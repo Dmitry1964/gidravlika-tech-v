@@ -1,33 +1,22 @@
-import {
-  YMap,
-  YMapDefaultSchemeLayer,
-  YMapDefaultFeaturesLayer,
-  YMapMarker,
-  reactify,
-} from 'src/shared/lib/ymaps';
-import type { YMapLocationRequest } from 'ymaps3';
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import cls from './map.module.scss';
 
-const LOCATION: YMapLocationRequest = {
-  center: [44.609915, 48.822733],
-  zoom: 18,
-};
-
-const Map = () => {
+const ContactMap = () => {
   return (
-    <div style={{width: '600px', height: '400px'}}>
-      <YMap location={reactify.useDefault(LOCATION)}>
-        <YMapDefaultSchemeLayer />
-        <YMapDefaultFeaturesLayer />
-
-        <YMapMarker
-          coordinates={reactify.useDefault(LOCATION.center)}
-          draggable={true}
+    <YMaps >
+        <Map className={cls.map}
+          defaultState={{
+            center: [48.822733, 44.609915],
+            zoom: 14,
+            controls: ['zoomControl', 'fullscreenControl'],
+            behaviors: ['false']
+          }}
+          modules={['control.ZoomControl', 'control.FullscreenControl']}
         >
-        </YMapMarker>
-      </YMap>
-    </div>
+          <Placemark defaultGeometry={[48.822733, 44.609915]} />
+        </Map>
+    </YMaps>
   );
 };
 
-export default Map;
+export default ContactMap;

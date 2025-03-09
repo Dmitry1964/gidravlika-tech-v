@@ -1,4 +1,4 @@
-import { Map } from 'src/widgets/map';
+import { ContactMap } from 'src/widgets/map';
 import cls from './contacts.module.scss';
 
 const Contacts = () => {
@@ -68,7 +68,7 @@ const Contacts = () => {
           </ul>
         </div>
         <div className={cls.contacts__map}>
-          <Map />
+          <ContactMap/>
         </div>
       </div>
     </section>
