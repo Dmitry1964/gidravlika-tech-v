@@ -9,6 +9,10 @@
   border-top: 1px solid variables.$color-default-white-20;
   padding-top: 180px;
 
+  @include mixins.vp-1439 {
+    padding-top: 150px;
+  }
+
   & p {
     font-family: variables.$ff-second;
     font-size: 4rem;

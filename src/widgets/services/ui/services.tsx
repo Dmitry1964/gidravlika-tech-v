@@ -1,6 +1,6 @@
 import cls from './services.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import ServiceCard from 'src/widgets/service-card/ui/service-card';
 
@@ -8,16 +8,33 @@ const Services = () => {
   return (
     <section className={cls.services}>
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay, Navigation]}
         spaceBetween={5}
         slidesPerView={3}
         loop={true}
-        autoplay={{
-          delay: 0,
-          pauseOnMouseEnter: true,
-          disableOnInteraction: false,
+        navigation
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2.5,
+          },
+
+          1280: {
+            slidesPerView: 3
+          }
+
         }}
-        speed={3000}
+        // autoplay={{
+        //   delay: 0,
+        //   pauseOnMouseEnter: true,
+        //   disableOnInteraction: false,
+        // }}
+        // speed={3000}
       >
         <SwiperSlide>
           <ServiceCard

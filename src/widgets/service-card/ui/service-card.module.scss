@@ -1,5 +1,5 @@
 @use '/src/styles/variables.scss';
-
+@use '/src/styles/mixins.scss';
 
 .service_card__wrapper {
   display: grid;
@@ -24,6 +24,15 @@
   padding-top: 152px;
   padding-bottom: 95px;
   z-index: 100;
+
+  @include mixins.vp-1439 {
+    padding-top: 100px;
+    padding-bottom: 45px;
+  }
+
+  @include mixins.vp-1279 {
+    padding-top: 80px;
+  }
 }
 
 .service_card__title {
@@ -34,6 +43,17 @@
   text-align: center;
   background-color: variables.$color-curious-blue-80;
   transition: background-color 0.35s ease;
+
+  @include mixins.vp-1439 {
+    font-size: 4rem;
+    line-height: 7rem;
+  }
+
+  // @include mixins.vp-1279 {
+  //   font-size: 4rem;
+  //   line-height: 7rem;
+  // }
+
 }
 
 .service_card__desc {
@@ -43,8 +63,14 @@
   text-align: center;
   color: variables.$color-default-white;
   margin: 0;
+  padding: 0 10px;
   flex-grow: 1;
-  color: variables.$color-default-white
+  color: variables.$color-default-white;
+
+  @include mixins.vp-1439 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
 }
 
 .service_card__button {
@@ -60,6 +86,11 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.35s ease;
+
+  @include mixins.vp-1439 {
+    width: 200px;
+    height: 60px;
+  }
 }
 
 
@@ -69,6 +100,10 @@
   object-fit: cover;
   filter:grayscale(80%) brightness(50%);
   transition: filter 0.5s ease;
+
+  @include mixins.vp-1439 {
+    height: 500px;
+  }
 }
 
 .service_card:hover {

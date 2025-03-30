@@ -1,5 +1,6 @@
 @use '/src/styles/container.scss';
 @use '/src/styles/variables.scss';
+@use '/src/styles/mixins.scss';
 
 .contacts {
   padding: 50px 0;
@@ -13,10 +14,18 @@
   display: grid;
   grid-template-columns: 40% 1fr;
   column-gap: 2%;
+
+  @include mixins.vp-1439 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contacts__content {
   padding-left: 70px;
+
+  @include mixins.vp-1439 {
+    padding-left: 40px;
+  }
 
   & h3 {
     font-family: variables.$ff-second;
