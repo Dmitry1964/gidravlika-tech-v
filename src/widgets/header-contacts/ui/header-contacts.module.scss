@@ -12,6 +12,8 @@
   align-items: center;
   margin-right: 80px;
 
+
+
   @include mixins.vp-1439 {
     margin-right: 50px;
   }
@@ -46,6 +48,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include mixins.vp-1023 {
+    display: none;
+  }
 }
 
 .header_contacts__item {

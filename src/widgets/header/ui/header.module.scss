@@ -19,6 +19,9 @@
   grid-row-start: 1;
   grid-row-end: 2;
 
+}
+
+.header__content_wrapper {
   & h1 {
     font-size: 6.2rem;
     line-height: 100%;
@@ -28,6 +31,12 @@
 
     @include mixins.vp-1279 {
       font-size: 5.2rem;
+    }
+
+    @include mixins.vp-1023 {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+      margin: 0 0 30px;
     }
   }
 
@@ -41,6 +50,12 @@
     @include mixins.vp-1279 {
       font-size: 4rem;
     }
+
+    @include mixins.vp-1023 {
+      font-size: 3.6rem;
+      line-height: 4.4rem;
+      margin: 0 0 25px;
+    }
   }
 
   & p {
@@ -51,10 +66,11 @@
     text-align: center;
     margin: 0;
   }
+
 }
 
 .header__banner_img {
-    object-fit: cover;
-    height: 804px;
-    width: 100%;
+  object-fit: cover;
+  height: 804px;
+  width: 100%;
 }
