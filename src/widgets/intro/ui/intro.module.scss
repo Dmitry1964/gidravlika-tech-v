@@ -13,6 +13,11 @@
     padding-top: 150px;
   }
 
+  @include mixins.vp-1023 {
+    height: 400px;
+    padding-top: 65px;
+  }
+
   & p {
     font-family: variables.$ff-second;
     font-size: 4rem;
@@ -20,6 +25,12 @@
     color: variables.$color-malibu;
     text-align: center;
     margin: 0 0 50px;
+
+    @include mixins.vp-1023 {
+      font-size: 3.5rem;
+      line-height: 4.2rem;
+      margin: 0 0 75px;
+    }
   }
 
   & h2 {

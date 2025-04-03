@@ -1,3 +1,5 @@
+import cls from './partner-card.module.scss';
+
 
 type PartnerCardProp = {
   img: string;
@@ -11,7 +13,7 @@ const PartnerCard = (prop: PartnerCardProp) => {
 
   const {img, img2x, webp, webp2x, alt} = prop
   return (
-    <article>
+    <article className={cls.partner_card}>
           <picture>
             <source
               type="image/webp"

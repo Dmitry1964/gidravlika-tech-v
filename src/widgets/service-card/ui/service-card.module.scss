@@ -49,10 +49,11 @@
     line-height: 7rem;
   }
 
-  // @include mixins.vp-1279 {
-  //   font-size: 4rem;
-  //   line-height: 7rem;
-  // }
+  @include mixins.vp-1023 {
+    font-size: 4rem;
+    line-height: 5.8rem;
+    margin-bottom: 40px;
+  }
 
 }
 
@@ -91,6 +92,13 @@
     width: 200px;
     height: 60px;
   }
+
+  @include mixins.vp-1023 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 180px;
+    height: 50px;
+  }
 }
 
 
@@ -103,6 +111,10 @@
 
   @include mixins.vp-1439 {
     height: 500px;
+  }
+
+  @include mixins.vp-1023 {
+    height: 400px;
   }
 }
 

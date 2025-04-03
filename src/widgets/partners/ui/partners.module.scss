@@ -8,6 +8,9 @@
   background-position-x: 150px;
   border-top: 1px solid variables.$color-default-white-20;
 
+  @include mixins.vp-1023 {
+    padding: 30px 0;
+  }
 }
 
 .partners__list {
@@ -32,5 +35,11 @@
   @include mixins.vp-1279 {
     font-size: 5rem;
     line-height: 5.8rem;
+  }
+
+  @include mixins.vp-1023 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    margin: 25px 0;
   }
 }
