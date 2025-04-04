@@ -27,7 +27,7 @@ const Footer = () => {
               />
             </a>
           </div>
-          <a className={cls.footer__btn} href="#"/>
+          {/* <a className={cls.footer__btn} href="#"/> */}
         </div>
       </div>
     </footer>
