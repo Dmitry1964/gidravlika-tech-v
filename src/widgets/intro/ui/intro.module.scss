@@ -18,6 +18,11 @@
     padding-top: 65px;
   }
 
+  @include mixins.vp-767 {
+    padding-top: 30px;
+    height: 200px;
+  }
+
   & p {
     font-family: variables.$ff-second;
     font-size: 4rem;
@@ -31,6 +36,12 @@
       line-height: 4.2rem;
       margin: 0 0 75px;
     }
+
+    @include mixins.vp-767 {
+      font-size: 2rem;
+      line-height: 2.8rem;
+      margin: 0 0 40px;
+    }
   }
 
   & h2 {
@@ -39,5 +50,10 @@
     color: variables.$color-default-white;
     text-align: center;
     margin: 0;
+
+    @include mixins.vp-767 {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
   }
 }

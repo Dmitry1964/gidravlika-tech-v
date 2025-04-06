@@ -7,6 +7,10 @@
   align-items: center;
   background-color: variables.$color-curious-blue-80;
   margin-bottom: 50px;
+
+  @include mixins.vp-767 {
+    margin-bottom: 25px;
+  }
 }
 
 .navbar__list {
@@ -37,6 +41,10 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     padding: 20px 30px;
+  }
+
+  @include mixins.vp-767 {
+    padding: 10px;
   }
 }
 
