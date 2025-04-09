@@ -14,7 +14,7 @@ type ServiceCardProps = {
 const ServiceCard = (card: ServiceCardProps): React.ReactNode => {
   const { img, img2x, webp, webp2x, desc, title, url } = card;
   return (
-    <Link className={cls.service_card} to={url}>
+    <article className={cls.service_card}>
       <div className={cls.service_card__wrapper}>
         <div className={cls.service_card__img}>
           <picture>
@@ -34,10 +34,10 @@ const ServiceCard = (card: ServiceCardProps): React.ReactNode => {
         <div className={cls.service_card__content}>
           <h2 className={cls.service_card__title}>{title}</h2>
           <p className={cls.service_card__desc}>{desc}</p>
-          <button className={cls.service_card__button}>Подробнее</button>
+          <Link className={cls.service_card__button} to={url}>Подробнее</Link>
         </div>
       </div>
-    </Link>
+    </article>
   );
 };
 

@@ -1,18 +1,19 @@
-import cls from './services.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import ServiceCard from 'src/widgets/service-card/ui/service-card';
+import './services.scss';
 
 const Services = () => {
   return (
-    <section className={cls.services}>
+    <section className='services'>
       <Swiper
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={5}
         slidesPerView={3}
         loop={true}
-        navigation
+        navigation={true}
+        pagination={true}
         breakpoints={{
           320: {
             slidesPerView: 1,

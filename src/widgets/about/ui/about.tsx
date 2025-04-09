@@ -1,6 +1,11 @@
 import cls from './about.module.scss';
+import { AboutImg } from 'src/widgets/about-img';
+import { useScreenWidth } from 'src/lib/hooks';
+import { TABLET_VIEWPORT } from 'src/lib/constans';
 
 const About = () => {
+  const screenWidth = useScreenWidth();
+
   return (
     <section className={cls.about}>
       <div className="container">
@@ -18,26 +23,68 @@ const About = () => {
               квалификации, обладающие большим опытом и знаниями производства
             </p>
           </div>
-          <div className={cls.about__image}>
-            <picture>
-              <source type="image/webp" srcSet='img/content/about-first.webp, img/content/about-first@2x.webp 2x' />
-              <img src="img/content/about-first.jpg" srcSet='img/content/about-first@2x.jpg 2x' width={438} height={657} alt="Изображение спецтехники на фоне города" />
-            </picture>
-          </div>
+          {screenWidth < TABLET_VIEWPORT && (
+            <div>
+              <AboutImg />
+            </div>
+          )}
+          {screenWidth >= TABLET_VIEWPORT && (
+            <div className={cls.about__image}>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="img/content/about-first.webp, img/content/about-first@2x.webp 2x"
+                />
+                <img
+                  src="img/content/about-first.jpg"
+                  srcSet="img/content/about-first@2x.jpg 2x"
+                  width={438}
+                  height={657}
+                  alt="Изображение спецтехники на фоне города"
+                />
+              </picture>
+            </div>
+          )}
           <ul className={cls.about__list}>
             <li className={cls.about__item}>
-              <img src="img/svg/quality.svg" width={100} height={100} alt="Знак качества" />
-              <span>ВЫСОКОЕ<br/>КАЧЕСТВО</span>
+              <img
+                src="img/svg/quality.svg"
+                width={100}
+                height={100}
+                alt="Знак качества"
+              />
+              <span>
+                ВЫСОКОЕ&nbsp;
+                <br/>
+                КАЧЕСТВО
+              </span>
             </li>
             <li className={cls.about__item}>
-              <img src="img/svg/price.svg" width={100} height={100} alt="Знак стоимости" />
-              <span>ДОСТУПНЫЕ<br/>ЦЕНЫ</span>
+              <img
+                src="img/svg/price.svg"
+                width={100}
+                height={100}
+                alt="Знак стоимости"
+              />
+              <span>
+                ДОСТУПНЫЕ&nbsp;
+                <br />
+                ЦЕНЫ
+              </span>
             </li>
             <li className={cls.about__item}>
-              <img src="img/svg/experience.svg" width={100} height={100} alt="Знак опыта" />
-              <span>БОЛЬШОЙ<br/>ОПЫТ</span>
+              <img
+                src="img/svg/experience.svg"
+                width={100}
+                height={100}
+                alt="Знак опыта"
+              />
+              <span>
+                БОЛЬШОЙ&nbsp;
+                <br />
+                ОПЫТ
+              </span>
             </li>
-
           </ul>
         </div>
       </div>

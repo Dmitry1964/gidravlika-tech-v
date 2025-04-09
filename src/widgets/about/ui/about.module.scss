@@ -16,6 +16,11 @@
     padding-top: 40px;
     padding-bottom: 50px;
   }
+
+  @include mixins.vp-767 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .about__wrapper {
@@ -36,6 +41,12 @@
     grid-template-rows: auto auto;
     column-gap: 25px;
     row-gap: 40px;
+  }
+
+  @include mixins.vp-767 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
 
@@ -130,6 +141,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include mixins.vp-767 {
+    margin-left: 50px;
+  }
+
+  @include mixins.vp-767 {
+    margin-left: 0;
+  }
 }
 
 .about__item {
@@ -156,6 +175,14 @@
     line-height: 3.2rem;
   }
 
+  @include mixins.vp-767 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
 
   & span {
     margin-left: 25px;
@@ -172,5 +199,15 @@
       height: 70px;
     }
 
+    @include mixins.vp-767 {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  & br {
+    @include mixins.vp-767 {
+      display: none;
+    }
   }
 }

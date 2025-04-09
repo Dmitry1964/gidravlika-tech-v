@@ -33,6 +33,11 @@
   @include mixins.vp-1279 {
     padding-top: 80px;
   }
+
+  @include mixins.vp-767 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .service_card__title {
@@ -55,6 +60,11 @@
     margin-bottom: 40px;
   }
 
+    @include mixins.vp-767 {
+      font-size: 3.2rem;
+      // line-height: 4rem;
+      margin-bottom: 30px;
+    }
 }
 
 .service_card__desc {
@@ -72,15 +82,22 @@
     font-size: 2.2rem;
     line-height: 3rem;
   }
+
+  @include mixins.vp-767 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 .service_card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   font-size: 2rem;
   line-height: 3rem;
   color: variables.$color-midnight-express;
   text-transform: uppercase;
-  justify-self: flex-end;
-  align-self: center;
   background-color: variables.$color-malibu;
   width: 230px;
   height: 80px;
@@ -115,6 +132,10 @@
 
   @include mixins.vp-1023 {
     height: 400px;
+  }
+
+  @include mixins.vp-374 {
+    height: 350px;
   }
 }
 

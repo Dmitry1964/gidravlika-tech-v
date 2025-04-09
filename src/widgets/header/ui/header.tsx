@@ -1,7 +1,7 @@
 import { HeaderContacts } from 'src/widgets/header-contacts';
 import cls from './header.module.scss';
 import { Navbar } from 'src/widgets/navbar';
-import { useScreenWidth } from 'src/hooks/hooks';
+import { useScreenWidth } from 'src/lib/hooks';
 
 const Header = (): React.ReactNode => {
   const screenWidth = useScreenWidth();

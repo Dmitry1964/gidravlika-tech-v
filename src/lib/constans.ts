@@ -1,0 +1,1 @@
+export const TABLET_VIEWPORT = 768;
