@@ -145,12 +145,16 @@
     filter: none;
   }
 
-  & .service_card__button {
-    background-color: variables.$color-curious-blue-80;
-  }
+  // & .service_card__button {
+  //   background-color: variables.$color-curious-blue-80;
+  // }
 
   & .service_card__title {
     background-color: variables.$color-malibu;
+  }
+
+  @include mixins.vp-1023 {
+    pointer-events: none;
   }
 }
 

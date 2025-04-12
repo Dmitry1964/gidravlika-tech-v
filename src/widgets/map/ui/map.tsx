@@ -7,7 +7,7 @@ const ContactMap = () => {
         <Map className={cls.map}
           defaultState={{
             center: [48.822733, 44.609915],
-            zoom: 14,
+            zoom: 16,
             controls: ['zoomControl', 'fullscreenControl'],
             behaviors: ['false']
           }}

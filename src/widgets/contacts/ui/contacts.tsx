@@ -60,9 +60,9 @@ const Contacts = () => {
                 <div className={cls.contacts__item_links}>
                   <a href="https://t.me/gidravlika_m" target="_blank">
                     <img
-                      src="img/svg/icon-telegram.svg"
-                      width={30}
-                      height={30}
+                      src="img/svg/icons-telegram.svg"
+                      width={35}
+                      height={35}
                       alt="Иконка телеграмм"
                     />
                   </a>
@@ -72,12 +72,12 @@ const Contacts = () => {
                 <div className={cls.contacts__item_links}>
                   <a href="https://wa.me/+79608726622" target="_blank">
                     <img
-                      src="img/svg/icon-whatsapp.svg"
-                      width={30}
-                      height={30}
+                      src="img/svg/icons-whatsapp.svg"
+                      width={35}
+                      height={35}
                       alt="Иконка точка на карте"
                     />
-                  </a>
+                  </a>derv
                 </div>
               </li>
             </ul>

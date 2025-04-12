@@ -20,6 +20,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  @include mixins.vp-767 {
+    padding: 10px 0;
+  }
 }
 
 .footer__copyright {

@@ -39,8 +39,8 @@ const Services = () => {
       >
         <SwiperSlide>
           <ServiceCard
-            img="img/content/diag.jpeg"
-            img2x="img/content/diag2x.jpeg"
+            img="img/content/diag.jpg"
+            img2x="img/content/diag2x.jpg"
             webp="img/content/diag.webp"
             webp2x="img/content/diag2x.webp"
             title="Диагностика"
@@ -50,8 +50,8 @@ const Services = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ServiceCard
-            img="img/content/remont-hidr.jpeg"
-            img2x="img/content/remont-hidr2x.jpeg"
+            img="img/content/remont-hidr.jpg"
+            img2x="img/content/remont-hidr2x.jpg"
             webp="img/content/remont-hidr.webp"
             webp2x="img/content/remont-hidr2x.webp"
             title="Ремонт оборудования"
@@ -61,8 +61,8 @@ const Services = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ServiceCard
-            img="img/content/remont-obor.jpeg"
-            img2x="img/content/remont-obor2x.jpeg"
+            img="img/content/remont-obor.jpg"
+            img2x="img/content/remont-obor2x.jpg"
             webp="img/content/remont-obor.webp"
             webp2x="img/content/remont-obor2x.webp"
             title="Ремонт спецтехники"
@@ -72,8 +72,8 @@ const Services = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ServiceCard
-            img="img/content/rvd.jpeg"
-            img2x="img/content/rvd2x.jpeg"
+            img="img/content/rvd.jpg"
+            img2x="img/content/rvd2x.jpg"
             webp="img/content/rvd.webp"
             webp2x="img/content/rvd2x.webp"
             title="Изготовление РВД"
@@ -83,8 +83,8 @@ const Services = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ServiceCard
-            img="img/content/shtock.jpeg"
-            img2x="img/content/shtock2x.jpeg"
+            img="img/content/shtock.jpg"
+            img2x="img/content/shtock2x.jpg"
             webp="img/content/shtock.webp"
             webp2x="img/content/shtock2x.webp"
             title="Штоки и гильзы"

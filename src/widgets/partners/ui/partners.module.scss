@@ -11,6 +11,15 @@
   @include mixins.vp-1023 {
     padding: 30px 0;
   }
+
+  @include mixins.vp-767 {
+    padding: 15px 0;
+  }
+}
+
+.partners__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .partners__list {
@@ -41,5 +50,17 @@
     font-size: 4.8rem;
     line-height: 6rem;
     margin: 25px 0;
+  }
+
+  @include mixins.vp-767 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin: 15px 0;
+  }
+
+  @include mixins.vp-374 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin: 15px 0;
   }
 }

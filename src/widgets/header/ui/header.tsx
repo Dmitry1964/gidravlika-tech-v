@@ -18,8 +18,8 @@ const Header = (): React.ReactNode => {
               />
               <img
                 className={cls.header__banner_img_mobile}
-                src="img/content/banner-mobile.jpeg"
-                srcSet="img/content/banner-mobile@2x.jpeg 2x"
+                src="img/content/banner-mobile.jpg"
+                srcSet="img/content/banner-mobile@2x.jpg 2x"
                 width="320"
                 height="569"
                 alt="Баннер"
@@ -36,8 +36,8 @@ const Header = (): React.ReactNode => {
               />
               <img
                 className={cls.header__banner_img}
-                src="img/content/banner-desktop.jpeg"
-                srcSet="img/content/banner-desktop@2x.jpeg 2x"
+                src="img/content/banner-desktop.jpg"
+                srcSet="img/content/banner-desktop@2x.jpg 2x"
                 width="1920"
                 height="804"
                 alt="Баннер"

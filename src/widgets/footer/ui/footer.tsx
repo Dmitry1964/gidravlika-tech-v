@@ -12,7 +12,7 @@ const Footer = () => {
             <span>Поддержка и разработка сайтов RGS-VOLGA</span>
             <a href="https://t.me/gidravlika_m">
               <img
-                src="img/svg/icon-telegram-footer.svg"
+                src="img/svg/icons-telegram.svg"
                 width={30}
                 height={30}
                 alt="Иконка телеграмм"
@@ -20,7 +20,7 @@ const Footer = () => {
             </a>
             <a href="https://wa.me/+79608726622" target="_blank">
               <img
-                src="img/svg/icon-whatsapp-footer.svg"
+                src="img/svg/icons-whatsapp.svg"
                 width={30}
                 height={30}
                 alt="Иконка точка на карте"
