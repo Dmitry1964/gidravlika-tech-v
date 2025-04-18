@@ -1,5 +1,5 @@
-import { ContactMap } from 'src/widgets/map';
 import cls from './contacts.module.scss';
+import { MapGis } from 'src/widgets/map-gis';
 
 const Contacts = () => {
   return (
@@ -83,7 +83,8 @@ const Contacts = () => {
             </ul>
           </div>
           <div className={cls.contacts__map}>
-            <ContactMap />
+            {/* <ContactMap /> */}
+            <MapGis/>
           </div>
         </div>
       </div>
