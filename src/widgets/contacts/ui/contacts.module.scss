@@ -82,12 +82,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include mixins.vp-1023 {
+    padding-left: 50px;
+  }
+
+  @include mixins.vp-767 {
+    padding: 0;
+  }
 }
 
 .contacts__item {
   display: flex;
   margin-bottom: 30px;
+  padding-bottom: 10px;
   align-items: center;
+  border-bottom: 1px solid variables.$color-curious-blue-80;
 
   @include mixins.vp-1023 {
     margin-bottom: 15px;
@@ -112,10 +122,6 @@
 
   & img {
     margin-right: 20px;
-
-    @include mixins.vp-1023 {
-      width: 30px;
-    }
   }
 }
 
@@ -126,18 +132,22 @@
 
 .contacts__social_list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   list-style: none;
   padding: 0;
   margin: 0;
 
   @include mixins.vp-1023 {
-    // justify-content: flex-start;
+    padding-left: 50px;
+  }
+
+  @include mixins.vp-767 {
+    padding: 0;
   }
 }
 
 .contacts__social_item {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 // .contacts__map {

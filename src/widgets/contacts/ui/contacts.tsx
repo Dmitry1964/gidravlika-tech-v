@@ -13,8 +13,8 @@ const Contacts = () => {
               <li className={cls.contacts__item}>
                 <img
                   src="img/svg/icon-phone.svg"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                   alt="Иконка телефона"
                 />
                 <div className={cls.contacts__item_links}>
@@ -33,8 +33,8 @@ const Contacts = () => {
               <li className={cls.contacts__item}>
                 <img
                   src="img/svg/icon-mail.svg"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                   alt="Иконка телефона"
                 />
                 <div className={cls.contacts__item_links}>
@@ -46,8 +46,8 @@ const Contacts = () => {
               <li className={cls.contacts__item}>
                 <img
                   src="img/svg/icon-point.svg"
-                  width={50}
-                  height={50}
+                  width={30}
+                  height={30}
                   alt="Иконка точка на карте"
                 />
                 <div className={cls.contacts__item_links}>
@@ -68,14 +68,14 @@ const Contacts = () => {
                   </a>
                 </div>
               </li>
-              <li className={cls.contacts__item}>
+              <li className={cls.contacts__social__item}>
                 <div className={cls.contacts__item_links}>
                   <a href="https://wa.me/+79608726622" target="_blank">
                     <img
                       src="img/svg/icons-whatsapp.svg"
                       width={35}
                       height={35}
-                      alt="Иконка точка на карте"
+                      alt="Иконка whatsapp"
                     />
                   </a>derv
                 </div>
