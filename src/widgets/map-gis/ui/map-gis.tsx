@@ -5,23 +5,32 @@ import DG from '2gis-maps';
 const MapGis = () => {
   const mapRef = useRef(null);
 
-  useEffect(() => {
-    const map = DG.map('map', {
-      center: [48.822733, 44.609915],
-      zoom: 16,
 
+  useEffect(() => {
+    const center = [48.822733, 44.609915];
+    const myIcon = DG.icon({
+      iconUrl: 'img/svg/map-point.svg',
+      iconSize: [38, 95],
+      iconAnchor: [19,80],
+      popupAnchor: [-3, -76]
+    })
+
+
+    const marker = DG.marker(center, {icon: myIcon});
+    marker.bindPopup('<span>Привет</span>').openPopup()
+    const map = DG.map(mapRef.current, {
+      center,
+      zoom: 16,
     });
+
+    marker.addTo(map);
 
     return () => {
       map.remove();
     };
   }, []);
 
-  return (
-    <div id='map' ref={mapRef} className={cls.map_gis}>
-      <p>chdhdhfhdfh</p>
-    </div>
-  );
+  return <div ref={mapRef} className={cls.map_gis}></div>;
 };
 
 export default MapGis;
