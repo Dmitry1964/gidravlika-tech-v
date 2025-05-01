@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { AppRoutes } from './routes/routes';
 import { Layout } from 'src/pages/layout';
-import MainPage from 'src/pages/main-page/ui/main-page';
+import { Suspense } from 'react';
+import MainPageLazy from 'src/pages/main-page/ui/main-page-lazy';
+import RepairPageLazy from 'src/pages/repair-page/ui/repair-page-lazy';
 
 const App = (): React.ReactNode => {
-
   const router = createBrowserRouter([
     {
       path: AppRoutes.Main,
@@ -12,16 +13,20 @@ const App = (): React.ReactNode => {
       children: [
         {
           path: AppRoutes.Main,
-          element: <MainPage />
-        }
-      ]
-    }
-  ])
+          element: <MainPageLazy />,
+        },
+        {
+          path: AppRoutes.Repair,
+          element: <RepairPageLazy />,
+        },
+      ],
+    },
+  ]);
   return (
-    <RouterProvider router={router} />
-  )
-}
+    <Suspense fallback={<div>Loading</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
+};
 
 export default App;
-
-

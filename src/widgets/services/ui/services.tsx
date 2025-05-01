@@ -3,6 +3,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import ServiceCard from 'src/widgets/service-card/ui/service-card';
 import './services.scss';
+import { AppRoutes } from 'src/app/routes/routes';
 
 const Services = () => {
   return (
@@ -56,7 +57,7 @@ const Services = () => {
             webp2x="img/content/remont-hidr2x.webp"
             title="Ремонт оборудования"
             desc="ремонт гидравлического оборудования"
-            url="#"
+            url= {AppRoutes.Repair}
           />
         </SwiperSlide>
         <SwiperSlide>
