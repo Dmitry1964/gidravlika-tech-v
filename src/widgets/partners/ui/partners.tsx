@@ -1,4 +1,4 @@
-import { PartnerCard } from 'src/widgets/partner-card';
+import { PartnerCard } from 'src/entities/partner-card';
 import cls from './partners.module.scss';
 
 const Partners = () => {

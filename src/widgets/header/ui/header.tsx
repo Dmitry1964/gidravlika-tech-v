@@ -1,6 +1,6 @@
 import { HeaderContacts } from 'src/widgets/header-contacts';
 import cls from './header.module.scss';
-import { Navbar } from 'src/widgets/navbar';
+import { Navbar } from 'src/entities/navbar';
 import { useScreenWidth } from 'src/lib/hooks';
 import {useLocation} from 'react-router';
 import { classNames } from 'src/shared/lib/class-names/class-names';
@@ -14,7 +14,7 @@ const Header = (): React.ReactNode => {
     <header className={cls.header}>
       <div className={cls.header__wrapper}>
         {screenWidth < 768 && (
-          <div className={cls.header__banner_mobile}>
+          <div className={classNames(cls.header__banner_mobile, [], {[cls.header__nonmain] : pathname !== AppRoutes.Main})}>
             <picture>
               <source
                 type="image/webp"
