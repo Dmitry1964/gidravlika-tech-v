@@ -1,0 +1,29 @@
+@use '/src/styles/variables.scss';
+@use '/src/styles/container.scss';
+
+.repair_cylinder {
+  background-color: black;
+  background-image: url("../img/content/pattern.jpeg");
+  background-position-x: 100px;
+  border-top: 1px solid variables.$color-default-white-20;
+  padding-top: 50px;
+
+  h2 {
+    font-family: variables.$ff-second;
+    font-size: 6.2rem;
+    line-height: 7rem;
+    color: variables.$color-default-white;
+    text-align: center;
+    margin: 0 0 50px;
+  }
+}
+
+.repair_cylinder__content {
+  background-color: variables.$color-prussian-blue;
+}
+
+.repair_cylinder__telescopy {
+  display: grid;
+  grid-template-columns: 50% 38%;
+  column-gap: 12%;
+}

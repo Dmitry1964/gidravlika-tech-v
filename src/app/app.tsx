@@ -16,7 +16,7 @@ const App = (): React.ReactNode => {
           element: <MainPageLazy />,
         },
         {
-          path: AppRoutes.Repair,
+          path: AppRoutes.EquipmentRepair,
           element: <RepairPageLazy />,
         },
       ],

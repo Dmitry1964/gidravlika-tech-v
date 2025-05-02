@@ -2,9 +2,13 @@ import { HeaderContacts } from 'src/widgets/header-contacts';
 import cls from './header.module.scss';
 import { Navbar } from 'src/widgets/navbar';
 import { useScreenWidth } from 'src/lib/hooks';
+import {useLocation} from 'react-router';
+import { classNames } from 'src/shared/lib/class-names/class-names';
+import { AppRoutes } from 'src/app/routes/routes';
 
 const Header = (): React.ReactNode => {
   const screenWidth = useScreenWidth();
+  const {pathname} = useLocation();
 
   return (
     <header className={cls.header}>
@@ -28,7 +32,7 @@ const Header = (): React.ReactNode => {
           </div>
         )}
         {screenWidth >= 768 && (
-          <div className={cls.header__banner}>
+          <div className={classNames(cls.header__banner, [], {[cls.header__nonmain] : pathname !== AppRoutes.Main})}>
             <picture>
               <source
                 type="image/webp"
@@ -45,12 +49,14 @@ const Header = (): React.ReactNode => {
             </picture>
           </div>
         )}
-        <div className={cls.header__content}>
+        <div className={classNames(cls.header__content, [], {
+          [cls.header__content_nonmain]: pathname !== AppRoutes.Main
+        })}>
           <div className="container">
             <HeaderContacts />
           </div>
           <Navbar />
-          <div className={cls.header__content_wrapper}>
+          <div className={classNames(cls.header__content_wrapper, [], {[cls.header__nonmain] : pathname !== AppRoutes.Main})}>
             <div className="container">
               <h2>ЭФФЕКТИВНЫЙ РЕМОНТ - НАШ ПРИОРИТЕТ</h2>
               <h1>РЕМОНТ ГИДРАВЛИЧЕСКОГО ОБОРУДОВАНИЯ</h1>

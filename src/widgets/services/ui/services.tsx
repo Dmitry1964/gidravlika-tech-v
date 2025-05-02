@@ -57,7 +57,7 @@ const Services = () => {
             webp2x="img/content/remont-hidr2x.webp"
             title="Ремонт оборудования"
             desc="ремонт гидравлического оборудования"
-            url= {AppRoutes.Repair}
+            url= {AppRoutes.EquipmentRepair}
           />
         </SwiperSlide>
         <SwiperSlide>

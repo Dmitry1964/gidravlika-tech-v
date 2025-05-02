@@ -7,7 +7,9 @@ import { Services } from "src/widgets/services";
 const MainPage = () => {
   return (
     <main>
-      <Intro />
+      <Intro>
+        <h2>УСЛУГИ НАШЕЙ КОМПАНИИ:</h2>
+      </Intro>
       <Services />
       <About />
       <Partners/>

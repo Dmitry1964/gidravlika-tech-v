@@ -1,8 +1,16 @@
+import { Intro } from 'src/widgets/intro';
+import cls from './repair-page.module.scss';
+import { RepairCylinder } from 'src/widgets/repair-cylinder';
 
-const RepairPage = () : React.ReactNode => {
+const RepairPage = (): React.ReactNode => {
   return (
-    <section>hdgdg</section>
-  )
-}
+    <main className={cls.repair_page}>
+      <Intro>
+        <h2>РЕМОНТ ГИДРАВЛИЧЕСКОГО<br/>ОБОРУДОВАНИЯ</h2>
+      </Intro>
+      <RepairCylinder/>
+    </main>
+  );
+};
 
-export default RepairPage
+export default RepairPage;
