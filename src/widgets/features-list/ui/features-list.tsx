@@ -5,7 +5,7 @@ import ServiceCard from 'src/entities/service-card/ui/service-card';
 import './services.scss';
 import { AppRoutes } from 'src/app/routes/routes';
 
-const Services = () => {
+const FeaturesList = () => {
   return (
     <section className='services'>
       <Swiper
@@ -98,5 +98,5 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default FeaturesList;
 
