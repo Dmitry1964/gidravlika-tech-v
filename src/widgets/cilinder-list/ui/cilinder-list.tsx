@@ -45,26 +45,29 @@ const CilinderList = () => {
             webp2x="img/content/dump-track2x.webp"
             title="Телескопические цилиндры"
             list={['цилиндры самосвалов', 'цилиндры зерновозов', 'цилиндры сельхозтележек']}
+            listImg={[]}
           />
         </SwiperSlide>
         <SwiperSlide>
           <UnitCard
-            img="img/content/remont-hidr.jpg"
-            img2x="img/content/remont-hidr2x.jpg"
-            webp="img/content/remont-hidr.webp"
-            webp2x="img/content/remont-hidr2x.webp"
-            title="Ремонт оборудования"
-            list={['hfp', 'gfdfdfd', 'wueweuwuewewu']}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <UnitCard
-            img="img/content/krane.png"
-            img2x="img/content/krane2x.png"
+            img="img/content/krane.jpg"
+            img2x="img/content/krane2x.jpg"
             webp="img/content/krane.webp"
             webp2x="img/content/krane2x.webp"
-            title="Ремонт спецтехники"
-            list={['hfp', 'gfdfdfd', 'wueweuwuewewu']}
+            title="Гидроцилиндры автокранов"
+            list={['гидроцилиндр подъема стрелы', 'гидроцилиндр выдвижения стрелы', 'гидроцилиндры опор', 'гидроцилиндры выдвижения опор']}
+            listImg={[]}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <UnitCard
+            img="img/content/village.jpg"
+            img2x="img/content/village2x.jpg"
+            webp="img/content/village.webp"
+            webp2x="img/content/village2x.webp"
+            title="Цилиндры сельхозтехники"
+            list={['Гидроцилиндры К700', 'Гидроцилиндры навески', 'Гидроцилиндры опрыскивателя', 'Прочая сельхозтехника']}
+            listImg={[]}
           />
         </SwiperSlide>
         {/* <SwiperSlide>

@@ -84,7 +84,6 @@ const Contacts = () => {
             </ul>
           </div>
           <div className={cls.contacts__map}>
-            {/* <ContactMap /> */}
             <MapGis/>
             <MapLinks/>
           </div>

@@ -1,0 +1,45 @@
+@use '/src/styles/variables.scss';
+
+
+.pump_card {
+  background-color: variables.$color-transparent;
+  padding: 30px 20px;
+  // max-width: 530px;
+  border: 1px solid variables.$color-malibu;
+  border-radius: 10px;
+}
+
+.pump_card__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pump_card__content {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+
+  & h3 {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: variables.$color-default-white;
+    margin: 0 0 15px;
+  }
+
+  & p {
+    font-size: 2.2rem;
+    line-height: 100%;
+    color: variables.$color-default-white;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.pump_card__img {
+  margin-right: 10%;
+
+  & img {
+    // filter: grayscale(80%) brightness(50%);
+    border-radius: 10px;
+  }
+}

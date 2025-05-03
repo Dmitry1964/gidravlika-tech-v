@@ -6,12 +6,6 @@ const RepairCylinder = (): React.ReactNode => {
     <section className={cls.repair_cylinder}>
       <h2>Ремонт гидроцилиндров</h2>
       <CilinderList/>
-      {/* <div className={cls.repair_cylinder__content}>
-        <div className="container">
-          <div className={cls.repair_cylinder__wrapper}>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 };

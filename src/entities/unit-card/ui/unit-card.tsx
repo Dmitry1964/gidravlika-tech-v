@@ -9,7 +9,8 @@ type UnitCardProps = {
   webp: string;
   webp2x: string;
   title: string;
-  list: string[]
+  list: string[];
+  listImg?: string[];
 };
 
 const UnitCard = (card: UnitCardProps): React.ReactNode => {
