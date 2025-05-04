@@ -25,7 +25,7 @@ const ServiceCard = (card: ServiceCardProps): React.ReactNode => {
             <img
               src={img}
               srcSet={img2x}
-              width={635}
+              width={630}
               height={600}
               alt={title}
             />

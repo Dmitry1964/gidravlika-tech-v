@@ -3,24 +3,28 @@
 
 .pump_card {
   background-color: variables.$color-transparent;
-  padding: 30px 20px;
-  // max-width: 530px;
+  padding: 15px 15px;
+  // width: 635px;
   border: 1px solid variables.$color-malibu;
   border-radius: 10px;
 }
 
 .pump_card__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  column-gap: 10px;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .pump_card__content {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   // justify-content: space-between;
 
   & h3 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 3.2rem;
     color: variables.$color-default-white;
     margin: 0 0 15px;
@@ -41,5 +45,6 @@
   & img {
     // filter: grayscale(80%) brightness(50%);
     border-radius: 10px;
+
   }
 }
