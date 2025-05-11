@@ -4,7 +4,6 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import cls from './pump-list.module.scss';
 
-
 const PumpList = (): React.ReactNode => {
   return (
     <section className={cls.pump_list}>
@@ -15,7 +14,21 @@ const PumpList = (): React.ReactNode => {
         spaceBetween={3}
         slidesPerView={3}
         loop={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2.5,
+          },
 
+          1280: {
+            slidesPerView: 3,
+          },
+        }}
       >
         <SwiperSlide>
           <PumpCard
@@ -24,7 +37,9 @@ const PumpList = (): React.ReactNode => {
             webp={'img/content/a10vso.webp'}
             webp2x={'img/content/a10vso@2x.webp'}
             title={'Гидронасосы серии Rexroth A10VSO'}
-            desc={'Гидропривод навески сельскозяйственной и строительной техники'}
+            desc={
+              'Гидропривод навески сельскозяйственной и строительной техники'
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -34,7 +49,9 @@ const PumpList = (): React.ReactNode => {
             webp={'img/content/PVS112.webp'}
             webp2x={'img/content/PVS112@2x.webp'}
             title={'Гидронасосы серии НП-90/НП-112'}
-            desc={'Гидропривод автомиксера, гидростатические передачи комбайнов, минипогрузчиков МКСМ-800, UNC, бульдозеров Четра'}
+            desc={
+              'Гидропривод автомиксера, гидростатические передачи комбайнов, минипогрузчиков МКСМ-800, UNC, бульдозеров Четра'
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -54,7 +71,9 @@ const PumpList = (): React.ReactNode => {
             webp={'img/content/rexroth4vg.webp'}
             webp2x={'img/content/rexroth4vg@2x.webp'}
             title={'Гидронасосы серии Rexroth A4VG'}
-            desc={'Гидростатические передачи сельскозяйственной и дорожно-строительной техники.'}
+            desc={
+              'Гидростатические передачи сельскозяйственной и дорожно-строительной техники.'
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -64,7 +83,9 @@ const PumpList = (): React.ReactNode => {
             webp={'img/content/303_4_112.webp'}
             webp2x={'img/content/303_4_112@2x.webp'}
             title={'Регулируемые гидромоторы ПСМ 303.4.112, МГ112'}
-            desc={'Привод лебедок автокранов, исполнительного механизма бурильных машин'}
+            desc={
+              'Привод лебедок автокранов, исполнительного механизма бурильных машин'
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -74,7 +95,9 @@ const PumpList = (): React.ReactNode => {
             webp={'img/content/pvh112.webp'}
             webp2x={'img/content/pvh112@2x.webp'}
             title={'Гидромоторы серии МП-90/МП-112'}
-            desc={'Гидропривод автомиксера, гидростатические передачи комбайнов, минипогрузчиков МКСМ-800, UNC, бульдозеров Четра'}
+            desc={
+              'Гидропривод автомиксера, гидростатические передачи комбайнов, минипогрузчиков МКСМ-800, UNC, бульдозеров Четра'
+            }
           />
         </SwiperSlide>
       </Swiper>
@@ -84,12 +107,13 @@ const PumpList = (): React.ReactNode => {
 
 export default PumpList;
 
-
-{/* <PumpCard
+{
+  /* <PumpCard
 img={'img/content/a10vso.jpg'}
 img2x={'img/content/a10vso@2x.jpg'}
 webp={'img/content/a10vso.webp'}
 webp2x={'img/content/a10vso@2x.webp'}
 title={'Гидронасосы серии Rexroth a10VSO'}
 desc={'гидропривод навески сельскозяйственной и строительной техники'}
-/> */}
+/> */
+}

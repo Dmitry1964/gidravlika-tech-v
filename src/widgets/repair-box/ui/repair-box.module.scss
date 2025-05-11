@@ -1,12 +1,13 @@
 @use '/src/styles/variables.scss';
 @use '/src/styles/container.scss';
 
-.repair_cylinder {
+.repair_box {
   background-color: black;
   background-image: url("../img/content/pattern.jpeg");
   background-position-x: 100px;
   border-top: 1px solid variables.$color-default-white-20;
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   h2 {
     font-family: variables.$ff-second;
@@ -14,7 +15,7 @@
     line-height: 7rem;
     color: variables.$color-malibu;
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 0 30px;
   }
 }
 
