@@ -3,6 +3,7 @@ import cls from './repair-page.module.scss';
 import { RepairCylinder } from 'src/widgets/repair-cylinder';
 import { RepairPump } from 'src/widgets/repair-pump';
 import { RepairBox } from 'src/widgets/repair-box';
+import ContactsBlock from 'src/widgets/contacts-block/ui/contacts-block';
 
 const RepairPage = (): React.ReactNode => {
   return (
@@ -13,6 +14,7 @@ const RepairPage = (): React.ReactNode => {
       <RepairPump/>
       <RepairCylinder/>
       <RepairBox/>
+      <ContactsBlock />
     </main>
   );
 };
