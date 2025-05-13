@@ -1,12 +1,12 @@
-import { REPAIR_PHONE, SERVICE_PHONE } from 'src/shared/constants/constants';
 import cls from './contacts-block.module.scss';
+import {ContactsData} from 'src/lib/constans';
 
 const ContactsBlock = (): React.ReactNode => {
   return (
     <div className={cls.contact_block}>
       <div className="container">
         <div className={cls.contact_block__wrapper}>
-          <a className={cls.contact_block__link} href={`tel:${REPAIR_PHONE}`}>
+          <a className={cls.contact_block__link} href={`tel:${ContactsData.RepairPhone}`}>
             <img
               src="img/svg/icon-phone-rev.svg"
               width={40}
@@ -16,10 +16,10 @@ const ContactsBlock = (): React.ReactNode => {
             <span>
               Ремонт гидравлического оборудования
               <br />
-              8-960-872-66-22
+              {ContactsData.RepairPhoneStr}
             </span>
           </a>
-          <a className={cls.contact_block__link} href={SERVICE_PHONE}>
+          <a className={cls.contact_block__link} href={`tel:${ContactsData.ServicePhone}`}>
             <img
               src="img/svg/icon-phone-rev.svg"
               width={40}
@@ -29,7 +29,7 @@ const ContactsBlock = (): React.ReactNode => {
             <span>
             Ремонт спецтехники и служба сервиса
               <br />
-              8-961-079-32-09
+              {ContactsData.ServicePhoneStr}
             </span>
           </a>
 
