@@ -4,12 +4,18 @@ import { Layout } from 'src/pages/layout';
 import { Suspense } from 'react';
 import MainPageLazy from 'src/pages/main-page/ui/main-page-lazy';
 import RepairPageLazy from 'src/pages/repair-page/ui/repair-page-lazy';
+import { ScrollTop } from 'src/shared/scroll-top';
 
 const App = (): React.ReactNode => {
   const router = createBrowserRouter([
     {
       path: AppRoutes.Main,
-      element: <Layout />,
+      element: (
+        <>
+          <Layout />
+          <ScrollTop />
+        </>
+      ),
       children: [
         {
           path: AppRoutes.Main,
