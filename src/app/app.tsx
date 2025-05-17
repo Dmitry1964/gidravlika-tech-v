@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import MainPageLazy from 'src/pages/main-page/ui/main-page-lazy';
 import RepairPageLazy from 'src/pages/repair-page/ui/repair-page-lazy';
 import { ScrollTop } from 'src/shared/scroll-top';
+import { Loading } from 'src/shared/loading';
 
 const App = (): React.ReactNode => {
   const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const App = (): React.ReactNode => {
     },
   ]);
   return (
-    <Suspense fallback={<div>Loading</div>}>
+    <Suspense fallback={<Loading/>}>
       <RouterProvider router={router} />
     </Suspense>
   );
